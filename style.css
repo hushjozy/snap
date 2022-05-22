@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Space Grotesk', sans-serif;
+}
+section{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  outline: hidden;
+}
+nav{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img{
+  width:100%;
+  object-fit: cover;
+}
+.nav_menu{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  /* margin-left: 3vw; */
+}
+.nav-bar{
+  margin-left: 2vw;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li ul{
+padding-top:1em;
+display: none;
+}
+nav ul li a{
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1em;
+  color: #1b1b1b;
+}
+label{
+  font-size: 2em;
+  color: #000;
+  font-weight: 900;
+}
+.login-button{
+  padding-right: 1em;
+
+}
+button{
+  padding: .5em .8em;
+  text-transform: capitalize;
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  border-radius: .5em;
+  margin-right: 2em;
+}
+button.active{
+  border: 2px solid #000;
+}
+button:first-child{
+  margin-right: 1em;
+}
+.container{
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background: red;÷ */
+}
+.home_text{
+  width: 45%;
+  padding: 1em 0;
+  text-align: left;
+}
+
+.home_text h1{
+  width:90%;
+  font-size: 3.5em;
+  font-weight: 800;
+}
+.home_text p{
+  padding: 1em 0;
+  font-size: 1.2em;
+  width: 85%;
+}
+.btn{
+  padding-top: 1em;
+}
+.btn a{
+  padding: .5em .8em;
+  text-transform: capitalize;
+  font-size: 1em;
+  border: 2px solid #000;
+  background: #000;
+  border-radius: .5em;
+  text-decoration: none;
+  color: #fff;
+}
+.home_image{
+  width: 35%;
+}
+.clients{
+  width:85%;
+  margin-top: 12em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.clients img{
+  width: 20%;
+  opacity: 0.4;
+}
