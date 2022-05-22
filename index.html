@@ -17,14 +17,14 @@
         <ul class="nav_menu" id="nav-menu">
           <label for="logo"> snap</label>
           <div class="nav-bar">
-            <li><a href="#">features</a> <i class="fas fa-chevron-down"></i>
-              <ul class="drop_nav">
+            <li><a href="#">features</a> <i class="fas fa-chevron-down" id="show" onclick="showMenu()"></i>
+              <ul class="drop_nav" id="drop">
                 <li><a href="#">drop down</a></li>
               </ul>
             </li>
 
-            <li><a href="#">company</a> <i class="fas fa-chevron-down"></i>
-              <ul class="drop_nav">
+            <li><a href="#">company</a> <i class="fas fa-chevron-down" id="show2" onclick="showMenu2()"></i>
+              <ul class="drop_nav" id="drop2">
                 <li><a href="#">drop down 2</a></li>
               </ul>
             </li>
@@ -70,5 +70,28 @@
           </div>
       </div>
     </section>
+
+    <script type="text/javascript">
+        var dropDown = document.getElementById("show");
+        var dropDown2 = document.getElementById("show2");
+        var show = document.getElementById("drop");
+        var show2 = document.getElementById("drop2");
+
+        function showMenu(){
+          if(show.style.display == "none"){
+            show.style.display="block"
+          }else {
+            show.style.display="none"
+
+          }
+        }
+        function showMenu2(){
+          if(show2.style.display == "none"){
+            show2.style.display="block"
+          }else {
+            show2.style.display="none"
+
+          }        }
+    </script>
   </body>
 </html>
